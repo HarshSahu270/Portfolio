@@ -577,67 +577,67 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
+      <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 via-blue-100 to-purple-50 text-slate-900 relative overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-32 h-32 bg-blue-500/10 rounded-full animate-pulse" />
-          <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-500/10 rounded-full animate-bounce" />
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-500/10 rounded-full animate-ping" />
+          <div className="absolute top-20 left-20 w-32 h-32 bg-blue-400/10 rounded-full animate-pulse" />
+          <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-400/10 rounded-full animate-bounce" />
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-400/10 rounded-full animate-ping" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 hover:text-blue-400 transition-colors duration-300">Get In Touch</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
-            <p className="text-xl text-slate-300 mt-6 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, collaborations, 
-              and interesting projects in the field of electronics and embedded systems.
-            </p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover:text-blue-700 transition-colors duration-300">Get In Touch</h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
+        <p className="text-xl text-slate-600 mt-6 max-w-2xl mx-auto">
+          I'm always open to discussing new opportunities, collaborations, 
+          and interesting projects in the field of electronics and embedded systems.
+        </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <a
-              href="mailto:harshsahu3425@gmail.com"
-              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg hover:bg-slate-700/50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-700 hover:border-blue-500"
-            >
-              <Mail className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-slate-300">harshsahu3425@gmail.com</p>
-            </a>
+        <a
+          href="mailto:harshsahu3425@gmail.com"
+          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+        >
+          <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+          <h3 className="text-xl font-semibold mb-2">Email</h3>
+          <p className="text-slate-700">harshsahu3425@gmail.com</p>
+        </a>
 
-            <a
-              href="https://linkedin.com/in/harsh-sahu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg hover:bg-slate-700/50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-700 hover:border-blue-500"
-            >
-              <Linkedin className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-              <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
-              <p className="text-slate-300 flex items-center justify-center">
-                linkedin.com/in/harsh-sahu
-                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-              </p>
-            </a>
+        <a
+          href="https://linkedin.com/in/harsh-sahu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+        >
+          <Linkedin className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+          <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
+          <p className="text-slate-700 flex items-center justify-center">
+            linkedin.com/in/harsh-sahu
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </p>
+        </a>
 
-            <a
-              href="https://github.com/harshsahu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg hover:bg-slate-700/50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-700 hover:border-blue-500"
-            >
-              <Github className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-              <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-              <p className="text-slate-300 flex items-center justify-center">
-                github.com/harshsahu
-                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-              </p>
-            </a>
+        <a
+          href="https://github.com/harshsahu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+        >
+          <Github className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+          <h3 className="text-xl font-semibold mb-2">GitHub</h3>
+          <p className="text-slate-700 flex items-center justify-center">
+            github.com/harshsahu
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </p>
+        </a>
           </div>
 
-          <div className="text-center mt-16 pt-8 border-t border-slate-700">
-            <p className="text-slate-400 hover:text-slate-300 transition-colors duration-300">
-              © 2025 Harsh Sahu. Designed with passion for electronics and innovation.
-            </p>
+          <div className="text-center mt-16 pt-8 border-t border-slate-200">
+        <p className="text-slate-500 hover:text-slate-700 transition-colors duration-300">
+          © 2025 Harsh Sahu. Designed with passion for electronics and innovation.
+        </p>
           </div>
         </div>
       </section>
