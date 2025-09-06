@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Menu, 
-  X, 
-  Home, 
-  User, 
-  GraduationCap, 
-  Code, 
-  FolderOpen, 
-  Briefcase, 
-  Award, 
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  GraduationCap,
+  Code,
+  FolderOpen,
+  Briefcase,
+  Award,
   Mail,
   Github,
   Linkedin,
@@ -41,11 +41,11 @@ function App() {
 
   useEffect(() => {
     setIsLoaded(true);
-    
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
-    
+
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
@@ -85,7 +85,7 @@ function App() {
     <div className="min-h-screen bg-slate-50 relative overflow-x-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 pointer-events-none">
-        <div 
+        <div
           className="absolute w-96 h-96 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse"
           style={{
             left: mousePosition.x - 192,
@@ -108,7 +108,7 @@ function App() {
                 Harsh Sahu
               </h1>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -118,11 +118,10 @@ function App() {
                     <button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 flex items-center space-x-1 hover:scale-105 transform ${
-                        activeSection === item.id
+                      className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 flex items-center space-x-1 hover:scale-105 transform ${activeSection === item.id
                           ? 'bg-blue-100 text-blue-700'
                           : 'text-slate-600 hover:text-blue-700 hover:bg-blue-50'
-                      }`}
+                        }`}
                     >
                       <Icon size={16} className="transition-transform duration-300 group-hover:rotate-12" />
                       <span>{item.label}</span>
@@ -154,11 +153,10 @@ function App() {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-300 flex items-center space-x-2 hover:scale-105 transform ${
-                      activeSection === item.id
+                    className={`w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-300 flex items-center space-x-2 hover:scale-105 transform ${activeSection === item.id
                         ? 'bg-blue-100 text-blue-700'
                         : 'text-slate-600 hover:text-blue-700 hover:bg-blue-50'
-                    }`}
+                      }`}
                   >
                     <Icon size={20} />
                     <span>{item.label}</span>
@@ -179,7 +177,7 @@ function App() {
           <div className="absolute bottom-40 left-1/4 w-12 h-12 bg-green-200/30 rounded-full animate-bounce" style={{ animationDelay: '2s', animationDuration: '5s' }} />
           <div className="absolute top-1/3 right-1/3 w-8 h-8 bg-orange-200/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3.5s' }} />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className={`text-center transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="mb-8 relative">
@@ -196,7 +194,7 @@ function App() {
               Electronics & Communication Engineering Student | Embedded Systems & VLSI Enthusiast
             </p>
             <p className={`text-lg text-slate-500 mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              Passionate about designing innovative semiconductor solutions and embedded systems 
+              Passionate about designing innovative semiconductor solutions and embedded systems
               that bridge the gap between hardware and software innovation.
             </p>
             <div className={`flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 transition-all duration-1000 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -225,30 +223,30 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">About Me</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 hover:translate-x-2 transition-transform duration-500">
               <p className="text-lg text-slate-600 leading-relaxed">
-                I am <strong className="text-slate-900">Harsh Sahu</strong>, a 3rd year Electronics and Communication Engineering 
-                student at Geetanjali Institute of Technical Studies. My journey in ECE has been driven by 
-                an insatiable curiosity about how electronic systems work and how they can be optimized for 
+                I am <strong className="text-slate-900">Harsh Sahu</strong>, a 3rd year Electronics and Communication Engineering
+                student at Geetanjali Institute of Technical Studies. My journey in ECE has been driven by
+                an insatiable curiosity about how electronic systems work and how they can be optimized for
                 better performance.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                I am passionate about <strong className="text-blue-700">Embedded Systems</strong>, 
-                <strong className="text-blue-700"> VLSI Design</strong>, and 
-                <strong className="text-blue-700"> Communication Networks</strong>. Through hands-on projects 
-                and continuous learning, I've developed a strong foundation in both theoretical concepts 
+                I am passionate about <strong className="text-blue-700">Embedded Systems</strong>,
+                <strong className="text-blue-700"> VLSI Design</strong>, and
+                <strong className="text-blue-700"> Communication Networks</strong>. Through hands-on projects
+                and continuous learning, I've developed a strong foundation in both theoretical concepts
                 and practical applications.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                My goal is to grow as a <strong className="text-slate-900">VLSI & Embedded Technology professional</strong>, 
-                contributing to innovative semiconductor solutions that shape the future of technology. 
-                I believe in the power of continuous learning and staying updated with the latest 
+                My goal is to grow as a <strong className="text-slate-900">VLSI & Embedded Technology professional</strong>,
+                contributing to innovative semiconductor solutions that shape the future of technology.
+                I believe in the power of continuous learning and staying updated with the latest
                 industry trends and technologies.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:scale-105 transition-all duration-300 hover:shadow-lg group">
                 <Zap className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:animate-pulse" />
@@ -282,7 +280,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">Education</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8 border border-slate-200 hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:border-blue-300">
               <div className="flex items-start space-x-6">
@@ -343,7 +341,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">Skills & Expertise</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* Programming Languages */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg hover:scale-105 transition-all duration-500 hover:shadow-xl group">
@@ -415,7 +413,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">Featured Projects</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {[
               {
@@ -454,7 +452,7 @@ function App() {
                 orange: 'from-orange-500 to-orange-600 bg-orange-50 text-orange-600',
                 purple: 'from-purple-500 to-purple-600 bg-purple-50 text-purple-600'
               };
-              
+
               return (
                 <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 group border border-transparent hover:border-blue-200">
                   <div className="flex items-center mb-4">
@@ -491,7 +489,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">Internships & Training</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-slate-50 rounded-lg p-8 text-center border border-blue-200 hover:shadow-2xl hover:scale-105 transition-all duration-500 group">
               <Briefcase className="w-16 h-16 text-blue-600 mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
@@ -499,8 +497,8 @@ function App() {
                 Exciting Opportunities Ahead
               </h3>
               <p className="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
-                Currently seeking internship opportunities in VLSI Design, Embedded Systems, 
-                and Semiconductor Technology. Open to learning from industry experts and 
+                Currently seeking internship opportunities in VLSI Design, Embedded Systems,
+                and Semiconductor Technology. Open to learning from industry experts and
                 contributing to innovative projects.
               </p>
               <p className="text-xl font-semibold text-blue-700 animate-pulse">
@@ -529,7 +527,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-blue-700 transition-colors duration-300">Achievements & Certifications</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-500 group">
               <div className="flex items-center mb-4">
@@ -584,60 +582,60 @@ function App() {
           <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-400/10 rounded-full animate-bounce" />
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-400/10 rounded-full animate-ping" />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover:text-blue-700 transition-colors duration-300">Get In Touch</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
-        <p className="text-xl text-slate-600 mt-6 max-w-2xl mx-auto">
-          I'm always open to discussing new opportunities, collaborations, 
-          and interesting projects in the field of electronics and embedded systems.
-        </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 hover:text-blue-700 transition-colors duration-300">Get In Touch</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
+            <p className="text-xl text-slate-600 mt-6 max-w-2xl mx-auto">
+              I'm always open to discussing new opportunities, collaborations,
+              and interesting projects in the field of electronics and embedded systems.
+            </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-        <a
-          href="mailto:harshsahu3425@gmail.com"
-          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
-        >
-          <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-          <h3 className="text-xl font-semibold mb-2">Email</h3>
-          <p className="text-slate-700">harshsahu3425@gmail.com</p>
-        </a>
+            <a
+              href="mailto:harshsahu3425@gmail.com"
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+            >
+              <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+              <h3 className="text-xl font-semibold mb-2">Email</h3>
+              <p className="text-slate-700">harshsahu3425@gmail.com</p>
+            </a>
 
-        <a
-          href="https://linkedin.com/in/harsh-sahu"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
-        >
-          <Linkedin className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-          <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
-          <p className="text-slate-700 flex items-center justify-center">
-            linkedin.com/in/harsh-sahu
-            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-          </p>
-        </a>
+            <a
+              href="https://linkedin.com/in/harsh-sahu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+            >
+              <Linkedin className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+              <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
+              <p className="text-slate-700 flex items-center justify-center">
+                linkedin.com/in/harsh-sahu
+                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+              </p>
+            </a>
 
-        <a
-          href="https://github.com/harshsahu"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
-        >
-          <Github className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
-          <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-          <p className="text-slate-700 flex items-center justify-center">
-            github.com/harshsahu
-            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-          </p>
-        </a>
+            <a
+              href="https://github.com/HarshSahu270"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
+            >
+              <Github className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+              <h3 className="text-xl font-semibold mb-2">GitHub</h3>
+              <p className="text-slate-700 flex items-center justify-center">
+                github.com/harshsahu
+                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+              </p>
+            </a>
           </div>
 
           <div className="text-center mt-16 pt-8 border-t border-slate-200">
-        <p className="text-slate-500 hover:text-slate-700 transition-colors duration-300">
-          © 2025 Harsh Sahu. Designed with passion for electronics and innovation.
-        </p>
+            <p className="text-slate-500 hover:text-slate-700 transition-colors duration-300">
+              © 2025 Harsh Sahu. Designed with passion for electronics and innovation.
+            </p>
           </div>
         </div>
       </section>
