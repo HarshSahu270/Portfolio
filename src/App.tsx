@@ -604,7 +604,7 @@ function App() {
             </a>
 
             <a
-              href="https://linkedin.com/in/harsh-sahu"
+              href="https://linkedin.com/in/harsh-teli-9855a8371"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/70 backdrop-blur-sm p-6 rounded-lg hover:bg-blue-50 transition-all duration-500 group text-center hover:scale-105 transform hover:shadow-2xl border border-slate-200 hover:border-blue-400"
@@ -612,15 +612,10 @@ function App() {
               <Linkedin className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
               <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
               <p className="text-slate-700 flex items-center justify-center">
-                linkedin.com/in/harsh-teli-9855a8371s
+                linkedin.com/in/harsh-teli-9855a8371
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </p>
             </a>
-            <a
-              href="https://linkedin.com/in/harsh-teli-9855a8371s"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
 
             <a
               href="https://github.com/HarshSahu270"
