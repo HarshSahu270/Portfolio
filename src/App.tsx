@@ -616,6 +616,11 @@ function App() {
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </p>
             </a>
+            <a
+              href="https://linkedin.com/in/harsh-teli-9855a8371s"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
 
             <a
               href="https://github.com/HarshSahu270"
