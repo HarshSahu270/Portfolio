@@ -612,7 +612,7 @@ function App() {
               <Linkedin className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
               <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
               <p className="text-slate-700 flex items-center justify-center">
-                linkedin.com/in/harsh-sahu
+                linkedin.com/in/harsh-teli-9855a8371s
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </p>
             </a>
